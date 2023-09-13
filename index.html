@@ -10,43 +10,120 @@
     <title>Profile</title>
 </head>
 <body>
-    <!--BARRA DE NAVEGACION-->
-    <div class="nav">
-        <h1 class="nav-title">Perfil</h1>
-        <ul class="nav-links">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#" class="active">My Profile</a></li>
-            <li><a href="#">Encontrar conexiones</a></li>
-            <li><button class="btn">sign out</button></li>
-        </ul>
+    <div class="top">
+        <div class="nav">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+                <li><button class="btn">Sign Out</button></li>
+            </ul>
+        </div>  
     </div>
+    <div class="container">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-2">
+                <div class="user-card">
+                    <div class="card-header">
+                        <img src="img/jane-m.jpg" alt="jane-medium-avatar" class="avatar-m">
+                    </div>
+                    <div class="card-body">
+                        <h1>Jane Doe</h1>
+                        <h3>
+                            <img src="icon/map-marker.png" alt="pin" class="icon-s"> 
+                            Seattle
+                        </h3>
+                        <p>Developer | Engineer | Problem Solver<br>
+                        Master of shadows and the Internet!</p>
+                        <p>
+                            <a href="#">
+                                <img src="icon/gear.png" alt="gear" class="icon-s"> 
+                                edit profile
+                            </a>
+                        </p>
+                    </div>
+                </div>
 
-    <!--TARJETA DE PRESENTACION-->
-    <div class="tarjeta">
-        <div class="encabezado">
-            <img class="usuario"  src="./icon/user-circle.png" alt="imagen predeterminada de usuario">
-        </div>
-        <div class="cuerpo">
-            <h2>Jane Joe</h2>
-            <div class="ubicacion">
-                <img class="iconos" src="./icon/map-marker.png" alt="imagen de ubicacion">
-                <span class="ciudad">Seattle</span>
+                <div class="card">
+                    <div class="header">
+                        Education
+                    </div>
+                    <div class="card-body">
+                        <h2>Coding Dojo Full Stack Bootcamp</h2>
+                        <p class="dates">Dec 2019 - Mar 2020</p>
+                        <p>Triple Black Belt in Pyton, C#, and MERN...</p>
+                    </div>
+                </div>
+
             </div>
-            <div>Developer | Engenieer | Problem Solver</div>
-            <div>master of shadows and the internet</div>
-            <div class="edicion">
-                <img class="iconos" src="./icon/gear.png" alt="imagen de edicion">
-                <a class="edit-profile" href="">edit profile</a>
-            </div>
+
+            <!-- right column -->
+            <div class="col">
+                <div class="card">
+                    <div class="header">
+                        <span class="connections">2</span>
+                        Connection Requests
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="img/todd-s.jpg" alt="todd" class="avatar-s">
+                            <span>Todd E.</span>
+                        </span>
+                        <span class="end">
+                            <img src="icon/accept-circle.svg" alt="accept" class="avatar-s">
+                            <img src="icon/close-circle.svg" alt="decline" class="avatar-s">
+                        </span>
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="img/phil-s.jpg" alt="phil" class="avatar-s">
+                            <span>Phil K.</span>
+                        </span>
+                        <span class="end">
+                            <img src="icon/accept-circle.png" alt="accept" class="avatar-s">
+                            <img src="icon/close-circle.png" alt="decline" class="avatar-s">
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="header">
+                        <span class="connections">500+</span>
+                        Your Connections
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="img/adrien-s.jpg" alt="adrien" class="avatar-s">
+                            <span>Adrien D.</span>
+                        </span>
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="img/anne-s.jpg" alt="anne" class="avatar-s">
+                            <span>Anne J.</span>
+                        </span>
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="img/alayne-s.jpg" alt="alayne" class="avatar-s">
+                            <span>Alayne T.</span>
+                        </span>
+                    </div>
+                    <div class="user-line">
+                        <span class="start">
+                            <img src="img/arry-s.jpg" alt="arry" class="avatar-s">
+                            <span>Arry Y.</span>
+                        </span>
+                    </div>
+                    <div class="footer">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>  
         </div>
     </div>
-    <div class="leyenda">Conetion request</div>
-    <div class="seguidores">
-        <ul>
-            <li><img class="usuario-request" src="./icon/user-circle.png" alt="usuario"> Todd E<img class=" aceptar" src="./icon/done.svg" alt="aceptar"> <img class="cancelar" src="./icon/canel.svg" alt="cancelar"></li>
-            <li><img class="usuario-request" src="./icon/user-circle.png" alt="">phill K <img class=" aceptar" src="./icon/done.svg" alt="aceptar"> <img class="cancelar" src="./icon/canel.svg" alt="cancelar"> </li>
-        </ul>
-    </div>
+</div>
 
 </body>
 </html>
